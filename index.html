@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/006/263/931/large_2x/pastel-multi-color-gradient-background-simple-form-and-blend-of-color-spaces-as-contemporary-background-graphic-free-photo.jpg');
+}
+p {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+</style>
+<script type='text/javascript'>//<![CDATA[ 
+window.onload=function(){
+    canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    canvas.x = 300;
+    canvas.y = 300;
+    var w = 200, h = 200;
+    context.strokeStyle = "#000000";
+    context.strokeWeight = 3;
+    context.shadowOffsetX = 4.0;
+    context.shadowOffsetY = 4.0;
+    context.lineWidth = 10.0;
+    context.fillStyle = "#FF0000";
+    var d = Math.min(w, h);
+    var k = 120;
+    context.moveTo(k, k + d / 4);
+    context.quadraticCurveTo(k, k, k + d / 4, k);
+    context.quadraticCurveTo(k + d / 2, k, k + d / 2, k + d / 4);
+    context.quadraticCurveTo(k + d / 2, k, k + d * 3/4, k);
+    context.quadraticCurveTo(k + d, k, k + d, k + d / 4);
+    context.quadraticCurveTo(k + d, k + d / 2, k + d * 3/4, k + d * 3/4);
+    context.lineTo(k + d / 2, k + d);
+    context.lineTo(k + d / 4, k + d * 3/4);
+    context.quadraticCurveTo(k, k + d / 2, k, k + d / 4);
+    context.stroke();
+    context.fill();
+}//]]>  
+</script>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400" x="100" y="100"></canvas>
+  <p style="font-family: sans-serif; font-weight: bold; font-size: 35;">روز جهانی دختر رو ب عشقم تبریک میگم</p>
+  <p style="font-family: sans-serif; font-weight: bold; font-size: 35;">عاشقتم</p>
+
+  
+</body>
+</html>
